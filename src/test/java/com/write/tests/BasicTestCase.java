@@ -28,7 +28,7 @@ public abstract class BasicTestCase {
     protected HomePage homePage;
     protected MailPage mailPage;
 
-    public UserData haykisp = new UserData("testmailpam", "~EpamTask");
+    public UserData haykisp = new UserData("haykisp_test", "~Test1234");
 
 
     @BeforeMethod

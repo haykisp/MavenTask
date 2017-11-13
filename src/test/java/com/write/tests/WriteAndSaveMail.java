@@ -21,8 +21,8 @@ public class WriteAndSaveMail extends BasicTestCase {
         mailPage.writeAddress("haykisp@gmail.com");
         mailPage.writeBody("This is a test Email to save");
         mailPage.clickSaveEmail();
-        mailPage.waitToDisplay(mailPage.mailSaved);
-        Assert.assertTrue(mailPage.mailSaved.isDisplayed());
+        mailPage.waitToDisplay(mailPage.textMailSaved);
+        Assert.assertTrue(mailPage.textMailSaved.isDisplayed());
     }
 
 }

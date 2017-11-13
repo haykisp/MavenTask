@@ -20,7 +20,7 @@ public class HomePage extends Page {
     @FindBy(id = "PH_logoutLink")
     public WebElement buttonLogout;
 
-    @FindBy(xpath = ".//span[text()=\"Написать письмо\"]")
+    @FindBy(xpath = ".//span[@class=\"b-toolbar__btn__text b-toolbar__btn__text_pad\"]")
     public WebElement buttonNewMessage;
 
     public LoginPage clickLogout() {

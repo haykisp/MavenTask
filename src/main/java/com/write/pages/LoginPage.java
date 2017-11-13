@@ -16,13 +16,13 @@ public class LoginPage extends Page {
         wait = new WebDriverWait(driver, 3);
     }
 
-    @FindBy(id = "mailbox__auth__button")
+    @FindBy(id = "mailbox:submit")
     public WebElement buttonLogin;
 
-    @FindBy(id = "mailbox__login")
+    @FindBy(id = "mailbox:login")
     public WebElement fieldLogin;
 
-    @FindBy(id = "mailbox__password")
+    @FindBy(id = "mailbox:password")
     public WebElement fieldPassword;
 
 

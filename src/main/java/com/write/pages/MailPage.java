@@ -20,18 +20,23 @@ public class MailPage extends Page {
     }
 
 
-    @FindBy(css = "textarea.js-input.compose__labels__input")
+    @FindBy(xpath = ".//textarea[@data-original-name=\"To\"]")
     public WebElement fieldAddress;
 
     @FindBy(name = "Subject")
     public WebElement fieldSubject;
 
 
-    @FindBy(xpath = ".//span[text()=\"Сохранить\"]")
+    @FindBy(xpath = ".//div[@data-name=\"saveDraft\"]")
     public WebElement buttonSaveEmail;
 
+    @FindBy(xpath =".//div[@data-name=\"send\"]")
+    public WebElement buttonSendEmail;
+
     @FindBy(xpath = ".//div[@class=\"b-toolbar__message\"]")
-    public WebElement mailSaved;
+    public WebElement textMailSaved;
+
+
 
     public void writeAddress(String Email) {
         fieldAddress.sendKeys(Email);
@@ -52,5 +57,9 @@ public class MailPage extends Page {
 
     public void clickSaveEmail() {
         buttonSaveEmail.click();
+    }
+
+    public void clickSendEmail(){
+        buttonSendEmail.click();
     }
 }
